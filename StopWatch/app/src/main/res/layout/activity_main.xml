@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colourAsh"
+    tools:context=".MainActivity">
+
+
+    <Chronometer
+        android:id="@+id/TxtCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"
+        android:textColor="@color/colourSky"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxtCountdown"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="60dp"
+        android:onClick="onStart"
+        android:background="@drawable/button_shape"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/BtnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxtCountdown"
+        android:layout_toEndOf="@id/BtnStart"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/button_shape"
+        android:visibility="visible"
+        android:onClick="onReset"
+        tools:visibility="visible"
+        android:text="@string/reset" />
+
+</RelativeLayout>
